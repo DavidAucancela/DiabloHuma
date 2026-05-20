@@ -1,11 +1,44 @@
 {
+  "meta": {
+    "title": "Diablo Huma — Digital Archive",
+    "description": "A documentary site about the Diablo Huma, ceremonial dancer of the Inti Raymi in Ecuador."
+  },
   "nav": {
+    "inicio": "Home",
     "conocimiento": "Knowledge",
     "territorio": "Territory",
     "archivo": "Living Archive"
   },
   "home": {
     "title": "Diablo Huma",
-    "subtitle": "Digital Archive"
+    "subtitle": "Digital Archive",
+    "description": "A journey through the figure of the Diablo Huma: his history, his communities, and the symbolic universe he carries in every dance.",
+    "cta_conocimiento": "Explore knowledge",
+    "cta_territorio": "View territory",
+    "cta_archivo": "Enter the archive"
+  },
+  "conocimiento": {
+    "title": "Knowledge",
+    "subtitle": "History, symbol and ritual",
+    "description": "The Diablo Huma is not the devil of Catholicism. He is the spirit of the wind, the guardian of the mountains, the energy that descends during the Inti Raymi to announce abundance."
+  },
+  "territorio": {
+    "title": "Territory",
+    "subtitle": "Communities and their geography",
+    "description": "From Cotacachi to Chimborazo, the Diablo Huma appears during the June solstice celebrations. Each community holds its own way of dressing and dancing him."
+  },
+  "archivo": {
+    "title": "Living Archive",
+    "subtitle": "Photography, audio and testimony",
+    "description": "A growing archive: images, recordings, accounts from mayorales and dancers. Memory is not frozen — it is tended."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "back": "Back",
+    "read_more": "Read more",
+    "close": "Close",
+    "search": "Search",
+    "language": "Language"
   }
 }

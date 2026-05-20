@@ -1,11 +1,44 @@
 {
+  "meta": {
+    "title": "Diablo Huma — Archivo Digital",
+    "description": "Sitio documental sobre el Diablo Huma, danzante ceremonial del Inti Raymi en Ecuador."
+  },
   "nav": {
+    "inicio": "Inicio",
     "conocimiento": "Conocimiento",
     "territorio": "Territorio",
     "archivo": "Archivo vivo"
   },
   "home": {
     "title": "Diablo Huma",
-    "subtitle": "Archivo Digital"
+    "subtitle": "Archivo Digital",
+    "description": "Un recorrido por la figura del Diablo Huma: su historia, sus comunidades y el universo simbólico que porta en cada danza.",
+    "cta_conocimiento": "Explorar el conocimiento",
+    "cta_territorio": "Ver el territorio",
+    "cta_archivo": "Entrar al archivo"
+  },
+  "conocimiento": {
+    "title": "Conocimiento",
+    "subtitle": "Historia, símbolo y ritual",
+    "description": "El Diablo Huma no es el diablo del catolicismo. Es el espíritu del viento, el guardián de los cerros, la energía que desciende durante el Inti Raymi para anunciar la abundancia."
+  },
+  "territorio": {
+    "title": "Territorio",
+    "subtitle": "Las comunidades y su geografía",
+    "description": "Desde Cotacachi hasta Chimborazo, el Diablo Huma aparece en las fiestas del solsticio de junio. Cada comunidad guarda su propia forma de vestirlo y danzarlo."
+  },
+  "archivo": {
+    "title": "Archivo vivo",
+    "subtitle": "Fotografía, audio y testimonio",
+    "description": "Un archivo que crece: imágenes, grabaciones, relatos de mayorales y danzantes. La memoria no se congela, se cuida."
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "back": "Volver",
+    "read_more": "Leer más",
+    "close": "Cerrar",
+    "search": "Buscar",
+    "language": "Idioma"
   }
 }

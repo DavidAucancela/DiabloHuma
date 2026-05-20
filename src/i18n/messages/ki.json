@@ -1,11 +1,44 @@
 {
+  "meta": {
+    "title": "Supay Huma — Kawsay Killka",
+    "description": "Inti Raymi tukuypi tusuk Supay Humamanta killkashka, Ecuador mamallaktapi."
+  },
   "nav": {
+    "inicio": "Kallariy",
     "conocimiento": "Yachay",
     "territorio": "Allpa",
     "archivo": "Kawsay Killka"
   },
   "home": {
     "title": "Supay Huma",
-    "subtitle": "Kawsay Killka"
+    "subtitle": "Kawsay Killka",
+    "description": "Supay Humamanta ñan: paipak kawsay, paipak llakta, paipak tusuy ukupi tukuchinakuna.",
+    "cta_conocimiento": "Yachayta maskay",
+    "cta_territorio": "Allpata rikuy",
+    "cta_archivo": "Killkamantak yaykuy"
+  },
+  "conocimiento": {
+    "title": "Yachay",
+    "subtitle": "Kawsay, rimay, muskuy",
+    "description": "Supay Huma mana katoliku supaymi. Wayrapa animumi, urku llaktapak kamakmi, Inti Raymi punllapika hatun mikayta willankapak shamun."
+  },
+  "territorio": {
+    "title": "Allpa",
+    "subtitle": "Llaktakuna shinami chayashkakuna",
+    "description": "Cotacachimanta Chimborazokama, Supay Huma Inti Raymi raymipika rikurin. Sapa llakta paipak tusuy yachayta charinn."
+  },
+  "archivo": {
+    "title": "Kawsay Killka",
+    "subtitle": "Rikuchiy, uyay, willay",
+    "description": "Wiñay tukuk killka: rimaykuna, takikuna, tusukkunapak willakuykuna. Yuyayta mana chimpachinachu, aychanakami."
+  },
+  "common": {
+    "loading": "Shuyapay...",
+    "error": "Pantay tiyarirka",
+    "back": "Kutiy",
+    "read_more": "Astawan killkayta",
+    "close": "Kichariy",
+    "search": "Maskay",
+    "language": "Shimi"
   }
 }

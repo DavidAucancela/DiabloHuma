@@ -1,18 +1,110 @@
 @import "tailwindcss";
 
+/* ─────────────────────────────────────────────────────────────
+   TAILWIND THEME
+   Genera utilidades CSS a partir de los design tokens.
+   Fuente de verdad visual: docs/design-tokens.md
+   ───────────────────────────────────────────────────────────── */
 @theme {
-  /* Colores base */
-  --color-background: #14110d;
-  --color-accent-red: #b33a2e;
-  --color-accent-gold: #c8a14b;
 
-  /* Tipografía */
-  --font-serif: "Fraunces", Georgia, serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  /* ── Fondos ─────────────────────────────────────────────── */
+  --color-bg-base:     #14110d;
+  --color-bg-elevated: #1f1a14;
+  --color-bg-sunken:   #0f0d09;
+  --color-overlay:     rgb(0 0 0 / 0.50);
+
+  /* ── Texto ──────────────────────────────────────────────── */
+  --color-text-primary:  #f0e8d8;
+  --color-text-muted:    #a89b85;
+  --color-text-disabled: #6b5f4e;
+  --color-text-inverse:  #14110d;
+
+  /* ── Bordes ─────────────────────────────────────────────── */
+  --color-border:        #5c4a32;
+  --color-border-strong: #2e2418;
+  --color-border-focus:  #c8a14b;
+
+  /* ── Acentos ────────────────────────────────────────────── */
+  --color-accent-red:         #b33a2e;
+  --color-accent-red-hover:   #c94235;
+  --color-accent-gold:        #c8a14b;
+  --color-accent-gold-hover:  #e2bb70;
+  --color-accent-blue:        #1f4c5c;
+  --color-accent-blue-hover:  #2d6b80;
+
+  /* ── Tipografía ─────────────────────────────────────────── */
+  /* --font-fraunces y --font-inter los inyecta next/font     */
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-body:    var(--font-inter), system-ui, sans-serif;
+
+  /* ── Radios ─────────────────────────────────────────────── */
+  --radius-xs:   0.125rem;
+  --radius-sm:   0.25rem;
+  --radius-md:   0.5rem;
+  --radius-lg:   0.875rem;
+  --radius-xl:   1.5rem;
+  --radius-full: 9999px;
+
+  /* ── Sombras (dark-optimized) ───────────────────────────── */
+  --shadow-card:      0 2px 8px  -2px rgb(0 0 0 / 0.40),
+                      0 1px 2px  -1px rgb(0 0 0 / 0.30);
+  --shadow-raised:    0 8px 24px -4px rgb(0 0 0 / 0.55),
+                      0 2px 8px  -2px rgb(0 0 0 / 0.35);
+  --shadow-modal:     0 24px 48px -12px rgb(0 0 0 / 0.70),
+                      0  8px 16px  -8px rgb(0 0 0 / 0.50);
+  --shadow-glow-gold: 0 0 24px -4px rgb(200 161 75 / 0.35);
+
+  /* ── Easing ─────────────────────────────────────────────── */
+  --ease-smooth:   cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* ─────────────────────────────────────────────────────────────
+   CSS CUSTOM PROPERTIES
+   Vars de Z-index y estados que no necesitan utilidades Tailwind
+   ───────────────────────────────────────────────────────────── */
 :root {
-  background-color: var(--color-background);
-  color: #f0ebe3;
-  font-family: var(--font-sans);
+  /* Z-index */
+  --z-base:     0;
+  --z-raised:   10;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-overlay:  300;
+  --z-modal:    400;
+  --z-toast:    500;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   BASE
+   ───────────────────────────────────────────────────────────── */
+html {
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Focus visible accesible — usa accent-gold */
+:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 3px;
+  border-radius: var(--radius-xs);
+}
+
+/* Scrollbar discreta en navegadores WebKit */
+::-webkit-scrollbar       { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: var(--color-bg-base); }
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-text-muted); }
+
+/* Selección de texto con colores del tema */
+::selection {
+  background-color: rgb(200 161 75 / 0.25);
+  color: var(--color-text-primary);
 }
